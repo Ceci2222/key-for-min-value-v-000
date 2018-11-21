@@ -7,9 +7,12 @@ def key_for_min_value(name_hash)
   name_hash.each do |key, value|
     if low_number == nil 
       low_number = value
-      low_name = value
     elsif value <= low_number
       low_number = value
+    end
+  end
+  name_hash.each do |key, value|
+    if value == low_number
       low_name = key
     end
   end
