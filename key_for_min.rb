@@ -9,10 +9,7 @@ def key_for_min_value(name_hash)
       low_number = value
     elsif value <= low_number
       low_number = value
-    end
-  end
-  name_hash.each do |key, value|
-    if value == low_number
+    elsif value == low_number
       low_name = key
     end
   end
