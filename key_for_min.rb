@@ -3,15 +3,9 @@
 
 def key_for_min_value(name_hash)
   lowest = ""
-  
-  
-  
-  
-  
-  comparison = []
   name_hash.collect do |name, value|
-    comparison << value
-    if (value <= comparison[0]) && (value <= comparison[1]) && (value <= comparison[2])
+    
+    if (value <= lowest
       puts name
     else
     end
